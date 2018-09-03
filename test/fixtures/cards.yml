@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  atk_level: 1
+  def_level: 1
+  star_level: 1
+
+two:
+  name: MyString
+  type: 
+  atk_level: 1
+  def_level: 1
+  star_level: 1
