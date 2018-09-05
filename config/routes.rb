@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root "stores#welcome"
   
-  resources :user
+  resources :users
   
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
