@@ -1,0 +1,24 @@
+<h3>Welcome <%= @user.name %></h3>
+
+
+<%= link_to "Create New Order", new_order_path %>
+
+<h4>Previous Orders</h4>
+
+<table border ='1'>
+  <tbody>
+     <tr>
+      <td>Order Number</td>
+      <td>Number of Items</td>
+      <td>Price</td>
+    </tr>
+    <% @user.orders.each do |order| %>
+    <tr>
+      <td>order.id</td>
+      <td>order.num_of_items</td>
+      <td>order.price</td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>

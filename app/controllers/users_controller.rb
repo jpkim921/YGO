@@ -17,8 +17,7 @@ class UsersController < ApplicationController
     end
   end
   
-  def show
-    
+  def show    
   end
   
   private
@@ -28,6 +27,6 @@ class UsersController < ApplicationController
   end
   
   def user_params
-    params.require(:users).permit(:name, :email, :password, :owner)
+    params.require(:user).permit(:name, :email, :password, :owner)
   end
 end

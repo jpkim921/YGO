@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root "stores#welcome"
   
   resources :users
+  resources :orders
   
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
