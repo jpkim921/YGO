@@ -1,0 +1,2 @@
+module CreateGamesTableHelper
+end
