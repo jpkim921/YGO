@@ -11,34 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180903222351) do
-
-  create_table "cards", force: :cascade do |t|
-    t.string   "name"
-    t.string   "type"
-    t.integer  "level"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "player_id"
-    t.integer  "deck_id"
-    t.string   "attribute"
-    t.integer  "atk"
-    t.integer  "def"
-    t.text     "description"
-  end
-
-  create_table "decks", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
-  end
-
-  create_table "players", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "wins"
-    t.integer  "loss"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
