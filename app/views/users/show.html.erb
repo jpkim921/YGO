@@ -1,4 +1,6 @@
 <h3>Welcome <%= @user.name %></h3>
+<%= link_to "Log Out", {:controller=> "sessions", :action=> "destroy"}, :method => :post %>
+
 
 
 <%= link_to "Create New Order", new_order_path %>
