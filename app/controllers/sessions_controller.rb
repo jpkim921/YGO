@@ -7,18 +7,19 @@ class SessionsController < ApplicationController
   def create
     # binding.pry
     @user = User.find_by(email: params[:user][:email])
-
-    if @user
-
-      if @user && @user.authenticate(params[:user][:password])
+      
+    if @user && @user.authenticate(params[:user][:password])
         session[:user_id] = @user.id
         redirect_to user_path(@user)
       else
+        @user = User.new
+        flash.now[:alert] = "Your email was not found"
+
         render :new
+#         redirect_to login_path
+#         redirect_back(fallback_location: login_path)
       end
-    else
-      redirect_to login_path
-    end
+
   end
 
   def destroy
