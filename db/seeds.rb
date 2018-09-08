@@ -9,35 +9,25 @@
 
 
 items_hash =  {
-  bagel:  {
-    name: "Bagel",
+  nybagel:  {
+    name: "New York Bagel",
     price: 1,
-    category: "Baked Goods"
+    description: "Quickly boiled and baked, NY Style Bagel."
   },
-  muffin:  {
-    name: "Muffin",
+  becca:  {
+    name: "B.E.C.A",
     price: 1,
-    category: "Baked Goods"
-  },
-  cc:  {
-    name: "Cream Cheese",
-    price: 1,
-    category: "Spread"
-  },
-  jam:  {
-    name: "Butter",
-    price: 1,
-    category: "Spread"
+    description: "Bacon, Egg, & Cheese + Avocado."
   },
   coffee:  {
     name: "Coffee",
     price: 1,
-    category: "Beverage"
+    description: "Daily brewed coffee with beans from Colombia."
   },
-  tea:  {
-    name: "Tea",
+  juice:  {
+    name: "Juice",
     price: 1,
-    category: "Beverage"
+    description: "Freshly squeezed oranges from Florida."
   }
 }
 
