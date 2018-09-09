@@ -12,22 +12,26 @@ items_hash =  {
   nybagel:  {
     name: "New York Bagel",
     price: 1,
-    description: "Quickly boiled and baked, NY Style Bagel."
+    description: "Quickly boiled and baked, NY Style Bagel.",
+    category: "Food"
   },
   becca:  {
     name: "B.E.C.A",
     price: 1,
-    description: "Bacon, Egg, & Cheese + Avocado."
+    description: "Bacon, Egg, & Cheese + Avocado.",
+    category: "Food"
   },
   coffee:  {
     name: "Coffee",
     price: 1,
-    description: "Daily brewed coffee with beans from Colombia."
+    description: "Daily brewed coffee with beans from Colombia.",
+    category: "Beverage"
   },
   juice:  {
     name: "Juice",
     price: 1,
-    description: "Freshly squeezed oranges from Florida."
+    description: "Freshly squeezed oranges from Florida.",
+    category: "Beverage"
   }
 }
 

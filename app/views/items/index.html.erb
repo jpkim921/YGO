@@ -1,0 +1,32 @@
+view items new
+
+<h3>Menu</h3>
+
+<table border = 1>
+  <tbody>
+    <%= form_for @order, :url => url_for(:controller => 'orders', :action => 'create') do |f| %>
+
+      <% @foods.each do |food| %>
+        <tr>
+          <td><h3><%= food.name %></h3></td>
+          <td><h3>$<%= food.price %></h3></td>
+          <td><h3>Quantity</h3><%= number_field_tag 'bagel[:quantity]', nil, min:0 %></td>
+          <td><h3>Quantity</h3><%= number_field_tag, food.name[:quantity], min:0 %></td>
+        </tr>
+        <tr>
+          <td><p><%= food.description %></p></td>
+        </tr>
+        <tr>
+          <td><br></td>
+        </tr>
+      <% end %>
+
+      <%= f.submit "Submit Order" %>
+
+    <% end %>
+
+
+  </tbody>
+</table>
+
+number_field_tag 'quantity', nil, min: 1
